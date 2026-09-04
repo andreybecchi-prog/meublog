@@ -174,7 +174,7 @@ font-size: 0.9rem;
   class="logo"
   src=
  />
- <h1> Meu Blog tech<h1>
+ <h1> 📕 Meu Blog tech<h1>
  <p>Vou compartilhar conhecimento sobre tecnologia e programação</p>
  </h1>header>
 
@@ -185,9 +185,44 @@ font-size: 0.9rem;
  src="
 />
 
+<h2>Meu primeiro post</h2>
+<p class="autor">Por:Andrey Becchi<p>
+<p>
+Boas-vindas ao meu novo blog! Aqui vou compartilhar dicasde programação e curiosidade da aŕea de tecnologia.
+</p>
+<p>
+Fique por dentro das novidades sobre HTML, CSS, JavaScript e muito mais!
+</p>
+
+<!--Botões de like(unidos do segundo código)-->
+<divclass="botões-like">
+ <button id="like-coracao">❤️  <span>0</span></button>
+ <button id="like-joinha">👍🏻<span>0</span></button>
+     </div>
+   </main>
+ </div>
+
+ <!--Rodapé-->
+ <footer>
+<p> 2026-Blog do aluno Andrey Becchi| Todos os direitos reservados</p>
+</footer>
+<!--Script para contagem de likes -->
+<script>
+constbotoes = document.querySelectorAll('.botoes-like button');
+
+botoes.forEach(function(botao){
+ botao.addEventListener('click', function(){
+    constspan = botao.querySelectorAll('span');
+ span.textContent = parselnt(span.textContent, 10) +1;
+});
+});
+ </script>
+ </body>
+ </html>
 
 
-}
+
+
 
 
 
